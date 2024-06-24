@@ -46,7 +46,7 @@ SELECT * FROM Departemen;
 ```
 ![gambar](dokumentasi6/ss5.png)
 
-```
+```sql
 CREATE TABLE Project(
 id_proj VARCHAR(10) PRIMARY KEY,
 nama VARCHAR(45) NOT NULL,
@@ -140,34 +140,3 @@ SELECT karyawan.nik, karyawan.nama, karyawan.id_dept FROM karyawan JOIN departem
 SELECT DISTINCT k1.nik, k1.nama FROM karyawan k1 JOIN karyawan k2 ON k1.id_dept = k2.id_dept WHERE k1.gaji_pokok > (SELECT AVG(gaji_pokok) FROM karyawan WHERE nama LIKE '%K%');
 ```
 ![gambar](dokumentasi6/ss13.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
